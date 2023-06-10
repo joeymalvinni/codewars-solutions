@@ -1,0 +1,9 @@
+function uniqueInOrder (input) {
+  let final = [];
+  
+  for (let i = 0; i < input.length; ++i) {
+    if (input[i] !== final[final.length - 1]) final.push(input[i]);
+  }
+  
+  return final;
+}
